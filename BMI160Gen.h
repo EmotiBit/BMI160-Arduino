@@ -23,7 +23,7 @@ class BMI160GenClass : public CurieIMUClass {
         void spi_init();
         int spi_xfer(uint8_t *buf, unsigned tx_cnt, unsigned rx_cnt);
 	private:
-		TwoWire *i2cPort;
+		TwoWire *_i2cPort;
 
 };
 
